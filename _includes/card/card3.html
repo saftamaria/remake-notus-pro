@@ -1,106 +1,128 @@
 
-{% include product-construction.html %}
+<div class="flex flex-wrap flex-row items-center justify-between my-4">
+    <div>
+        <h2 class="text-xl font-bold ct-component-name-title" id="presentation-id-presentation-id-components-cardcontactustitle">CardContactUsTitle</h2>
+    </div>
 
-<div class="px-4 py-5 flex-auto ct-docs-frame">
-    <div class="relative flex flex-wrap justify-center ">
-        <div class="w-full">
-            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200">
-                <div class="flex-auto p-5 lg:p-10">
-                    <h4 class="text-2xl font-semibold">Want to work with us?</h4>
-                    <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">Complete this form and we will get back to you in 24 hours.</p>
-                    <div class="mt-8">
-                        <div class="relative w-full mb-3">
-                            <label class="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Full Name</label>
-                            <input placeholder="Full Name" type="text" class="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"></div>
-                            <div class="relative w-full mb-3">
-                                <label class="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Email</label>
-                                <input placeholder="Email" type="email" class="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"></div>
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Message</label>
-                                    <textarea placeholder="Type a message..." type="textarea" rows="4" cols="80" class="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"></textarea>
-                                </div>
-                            </div>
-                            <div class="text-center mt-6">
-                                <button class="text-xs px-4 py-2 shadow hover:shadow-md text-white bg-blueGray-800 border-blueGray-800 active:bg-blueGray-900 active:border-blueGray-900 rounded outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold">Send Message</button>
-                            </div>
+
+    <div class="inline-flex flex-wrap flex-row items-center">
+        <div class="bg-blueGray-100 border border-blueGray-100 rounded-lg">
+            <button class="inline-flex items-center justify-center outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase font-bold text-xs py-2 px-3 text-center rounded-lg border bg-white text-blueGray-600 border-blueGray-400">
+                <i class="fas fa-eye mr-2 text-lightBlue-600"></i>Preview</button>
+                <button class="inline-flex items-center justify-center outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase font-bold text-xs py-2 px-3 text-center rounded-lg border text-blueGray-500 border-transparent">
+                    <i class="fas fa-code mr-2 "></i>Code</button>
+                    </div>
+                    <div class="relative">
+                        <span class="-top-8 -left-4 absolute text-white rounded-lg py-1 px-2 bg-blueGray-800 transition-all duration-200 ease-in-out transform scale-0 opacity-0 ">Copied</span>
+                        <button class="group inline-flex items-center justify-center outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase font-bold text-xs py-2 px-3 text-center rounded-lg bg-white text-blueGray-600 focus:text-lightBlue-600">
+                            <i class="far fa-clone transition-all duration-200 ease-in-out transform group-focus:rotate-6"></i></button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="relative hidden">
-                <div class="docs-code-preview">
-                    <pre style="display: block; overflow-x: auto; padding: 14px; background: rgb(45, 43, 87); font-weight: normal; color: rgb(227, 223, 255); font-size: 0.825em; border-radius: 4px;">
-                        <code class="language-jsx" style="white-space: pre;">
-                            <span class="token token keyword module">import</span>
-                            <span> </span><span class="token token imports maybe-class-name">React</span><span> </span><span class="token token keyword module">from</span><span> </span><span class="token token string">"react"</span><span>
-                            </span>
-                            <span></span><span class="token token comment">// @notus-pro/react</span><span>
-                            </span><span></span><span class="token token keyword module">import</span><span> </span><span class="token token imports maybe-class-name">CardContactUsTitle</span><span> </span><span class="token token keyword module">from</span><span> </span><span class="token token string">"@notus-pro/react/CardContactUsTitle"</span><span>
-                            </span>
-                            <span></span><span class="token token keyword">const</span><span> props </span><span class="token token operator">=</span><span> </span><span class="token token punctuation">{</span><span>
-                            </span><span>  title</span><span class="token token operator">:</span><span> </span><span class="token token string">"Want to work with us?"</span><span class="token token punctuation">,</span><span>
-                            </span><span>  description</span><span class="token token operator">:</span><span> </span><span class="token token string">"Complete this form and we will get back to you in 24 hours."</span><span class="token token punctuation">,</span><span>
-                            </span><span>  buttonText</span><span class="token token operator">:</span><span> </span><span class="token token string">"Send Message"</span><span class="token token punctuation">,</span><span>
-                            </span><span>  inputs</span><span class="token token operator">:</span><span> </span><span class="token token punctuation">[</span><span>
-                            </span><span>    </span><span class="token token punctuation">{</span><span>
-                            </span><span>      labelText</span><span class="token token operator">:</span><span> </span><span class="token token string">"Full Name"</span><span class="token token punctuation">,</span><span>
-                            </span><span>      inputProps</span><span class="token token operator">:</span><span> </span><span class="token token punctuation">{</span><span> placeholder</span><span class="token token operator">:</span><span> </span><span class="token token string">"Full Name"</span><span class="token token punctuation">,</span><span> type</span><span class="token token operator">:</span><span> </span><span class="token token string">"text"</span><span> </span><span class="token token punctuation">}</span><span class="token token punctuation">,</span><span>
-                            </span><span>    </span><span class="token token punctuation">}</span><span class="token token punctuation">,</span><span>
-                            </span><span>    </span><span class="token token punctuation">{</span><span> labelText</span><span class="token token operator">:</span><span> </span><span class="token token string">"Email"</span><span class="token token punctuation">,</span><span> inputProps</span><span class="token token operator">:</span><span> </span><span class="token token punctuation">{</span><span> placeholder</span><span class="token token operator">:</span><span> </span><span class="token token string">"Email"</span><span class="token token punctuation">,</span><span> type</span><span class="token token operator">:</span><span> </span><span class="token token string">"email"</span><span> </span><span class="token token punctuation">}</span><span> </span><span class="token token punctuation">}</span><span class="token token punctuation">,</span><span>
-                            </span><span>    </span><span class="token token punctuation">{</span><span>
-                            </span><span>      labelText</span><span class="token token operator">:</span><span> </span><span class="token token string">"Message"</span><span class="token token punctuation">,</span><span>
-                            </span><span>      inputProps</span><span class="token token operator">:</span><span> </span><span class="token token punctuation">{</span><span>
-                            </span><span>        placeholder</span><span class="token token operator">:</span><span> </span><span class="token token string">"Type a message..."</span><span class="token token punctuation">,</span><span>
-                            </span><span>        type</span><span class="token token operator">:</span><span> </span><span class="token token string">"textarea"</span><span class="token token punctuation">,</span><span>
-                            </span><span>        rows</span><span class="token token operator">:</span><span> </span><span class="token token string">"4"</span><span class="token token punctuation">,</span><span>
-                            </span><span>        cols</span><span class="token token operator">:</span><span> </span><span class="token token string">"80"</span><span class="token token punctuation">,</span><span>
-                            </span><span>      </span><span class="token token punctuation">}</span><span class="token token punctuation">,</span><span>
-                            </span><span>    </span><span class="token token punctuation">}</span><span class="token token punctuation">,</span><span>
-                            </span><span>  </span><span class="token token punctuation">]</span><span class="token token punctuation">,</span><span>
-                            </span><span></span><span class="token token punctuation">}</span><span>
-                            </span>
-                            <span></span><span class="token token keyword module">export</span><span> </span><span class="token token keyword module">default</span><span> </span><span class="token token keyword">function</span><span> </span><span class="token token function maybe-class-name">Example</span><span class="token token punctuation">(</span><span class="token token punctuation">)</span><span> </span><span class="token token punctuation">{</span><span>
-                            </span><span>  </span><span class="token token keyword control-flow">return</span><span> </span><span class="token token punctuation">(</span><span>
-                            </span><span>    </span><span class="token token tag punctuation">&lt;</span><span class="token token tag punctuation">&gt;</span><span class="token token plain-text">
-                            </span><span class="token token plain-text">      </span><span class="token token tag punctuation">&lt;</span><span class="token token tag class-name">CardContactUsTitle</span><span class="token token tag"> </span><span class="token token tag spread punctuation">{</span><span class="token token tag spread punctuation">...</span><span class="token token tag spread attr-value">props</span><span class="token token tag spread punctuation">}</span><span class="token token tag"> </span><span class="token token tag punctuation">/&gt;</span><span class="token token plain-text">
-                            </span><span class="token token plain-text">    </span><span class="token token tag punctuation">&lt;/</span><span class="token token tag punctuation">&gt;</span><span>
-                            </span><span>  </span><span class="token token punctuation">)</span><span>
-                            </span><span></span><span class="token token punctuation">}</span><span>
-                            </span>
-                            </code>
-                        </pre>
-                    </div>
-                </div>
+</div>
 
-                <div class="relative hidden"><pre style="display: block; overflow-x: auto; padding: 14px; background: rgb(45, 43, 87); font-weight: normal; color: rgb(227, 223, 255); font-size: 0.825em; border-radius: 4px;"><code class="language-jsx" style="white-space: pre;"><span class="token token maybe-class-name">CardContactUsTitle</span><span class="token token punctuation">.</span><span class="token token property-access">defaultProps</span><span> </span><span class="token token operator">=</span><span> </span><span class="token token punctuation">{</span><span>
-                            </span><span>  inputs</span><span class="token token operator">:</span><span> </span><span class="token token punctuation">[</span><span class="token token punctuation">]</span><span class="token token punctuation">,</span><span>
-                            </span><span></span><span class="token token punctuation">}</span><span class="token token punctuation">;</span><span>
-                            </span>
-                            <span></span><span class="token token maybe-class-name">CardContactUsTitle</span><span class="token token punctuation">.</span><span class="token token property-access">propTypes</span><span> </span><span class="token token operator">=</span><span> </span><span class="token token punctuation">{</span><span>
-                            </span><span>  title</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">string</span><span class="token token punctuation">,</span><span>
-                            </span><span>  description</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">string</span><span class="token token punctuation">,</span><span>
-                            </span><span>  buttonText</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">string</span><span class="token token punctuation">,</span><span>
-                            </span><span>  </span><span class="token token comment">// for example you could pass an onClick handler like so:</span><span>
-                            </span><span>  </span>
-                            
-                            <span>
-                            </span><span>  buttonProps</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">object</span><span class="token token punctuation">,</span><span>
-                            </span><span>  </span><span class="token token comment">// NOTE: you cannot change the default design of these components,</span><span>
-                            </span><span>  </span><span class="token token comment">// // // i.e. you cannot pass className as props for them</span><span>
-                            </span><span>  inputs</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token method function property-access">arrayOf</span><span class="token token punctuation">(</span><span>
-                            </span><span>    </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token method function property-access">shape</span><span class="token token punctuation">(</span><span class="token token punctuation">{</span><span>
-                            </span><span>      labelText</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">string</span><span class="token token punctuation">,</span><span>
-                            </span><span>      labelProps</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">object</span><span class="token token punctuation">,</span><span>
-                            </span><span>      </span><span class="token token comment">// NOTE: if you wish to generate a textarea, you will need to pass</span><span>
-                            </span><span>      </span><span class="token token comment">// // // inside this object &gt;&gt; type: "textarea"</span><span>
-                            </span><span>      </span><span class="token token comment">// // // full example &gt;&gt; inputProps: { type: "textarea" }</span><span>
-                            </span><span>      inputProps</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">object</span><span class="token token punctuation">,</span><span>
-                            </span><span>    </span><span class="token token punctuation">}</span><span class="token token punctuation">)</span><span>
-                            </span><span>  </span><span class="token token punctuation">)</span><span class="token token punctuation">,</span><span>
-                            </span><span></span><span class="token token punctuation">}</span><span class="token token punctuation">;</span><span>
-                            </span>
-                            </code>
-                        </pre>
-                    </div>
-                </div>
+<div class="border border-solid border-blueGray-200 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded-lg">
+
+      <div class="px-4 py-5 flex-auto ct-docs-frame">
+         <div class="relative flex flex-wrap justify-center ">
+             <div class="w-full">
+                 <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200">
+                     <div class="flex-auto p-5 lg:p-10">
+                         <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+                         <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">Complete this form and we will get back to you in 24 hours.</p>
+                         <div class="mt-8">
+                             <div class="relative w-full mb-3">
+                                 <label class="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Full Name</label>
+                                 <input placeholder="Full Name" type="text" class="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"></div>
+                                 <div class="relative w-full mb-3">
+                                     <label class="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Email</label>
+                                     <input placeholder="Email" type="email" class="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"></div>
+                                     <div class="relative w-full mb-3">
+                                         <label class="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1">Message</label>
+                                         <textarea placeholder="Type a message..." type="textarea" rows="4" cols="80" class="px-3 py-3 placeholder-blueGray-400 text-blueGray-500 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 border-transparent"></textarea>
+                                     </div>
+                                 </div>
+                                 <div class="text-center mt-6">
+                                     <button class="text-xs px-4 py-2 shadow hover:shadow-md text-white bg-blueGray-800 border-blueGray-800 active:bg-blueGray-900 active:border-blueGray-900 rounded outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold">Send Message</button>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="relative hidden">
+                     <div class="docs-code-preview">
+                         <pre style="display: block; overflow-x: auto; padding: 14px; background: rgb(45, 43, 87); font-weight: normal; color: rgb(227, 223, 255); font-size: 0.825em; border-radius: 4px;">
+                             <code class="language-jsx" style="white-space: pre;">
+                                 <span class="token token keyword module">import</span>
+                                 <span> </span><span class="token token imports maybe-class-name">React</span><span> </span><span class="token token keyword module">from</span><span> </span><span class="token token string">"react"</span><span>
+                                 </span>
+                                 <span></span><span class="token token comment">// @notus-pro/react</span><span>
+                                 </span><span></span><span class="token token keyword module">import</span><span> </span><span class="token token imports maybe-class-name">CardContactUsTitle</span><span> </span><span class="token token keyword module">from</span><span> </span><span class="token token string">"@notus-pro/react/CardContactUsTitle"</span><span>
+                                 </span>
+                                 <span></span><span class="token token keyword">const</span><span> props </span><span class="token token operator">=</span><span> </span><span class="token token punctuation">{</span><span>
+                                 </span><span>  title</span><span class="token token operator">:</span><span> </span><span class="token token string">"Want to work with us?"</span><span class="token token punctuation">,</span><span>
+                                 </span><span>  description</span><span class="token token operator">:</span><span> </span><span class="token token string">"Complete this form and we will get back to you in 24 hours."</span><span class="token token punctuation">,</span><span>
+                                 </span><span>  buttonText</span><span class="token token operator">:</span><span> </span><span class="token token string">"Send Message"</span><span class="token token punctuation">,</span><span>
+                                 </span><span>  inputs</span><span class="token token operator">:</span><span> </span><span class="token token punctuation">[</span><span>
+                                 </span><span>    </span><span class="token token punctuation">{</span><span>
+                                 </span><span>      labelText</span><span class="token token operator">:</span><span> </span><span class="token token string">"Full Name"</span><span class="token token punctuation">,</span><span>
+                                 </span><span>      inputProps</span><span class="token token operator">:</span><span> </span><span class="token token punctuation">{</span><span> placeholder</span><span class="token token operator">:</span><span> </span><span class="token token string">"Full Name"</span><span class="token token punctuation">,</span><span> type</span><span class="token token operator">:</span><span> </span><span class="token token string">"text"</span><span> </span><span class="token token punctuation">}</span><span class="token token punctuation">,</span><span>
+                                 </span><span>    </span><span class="token token punctuation">}</span><span class="token token punctuation">,</span><span>
+                                 </span><span>    </span><span class="token token punctuation">{</span><span> labelText</span><span class="token token operator">:</span><span> </span><span class="token token string">"Email"</span><span class="token token punctuation">,</span><span> inputProps</span><span class="token token operator">:</span><span> </span><span class="token token punctuation">{</span><span> placeholder</span><span class="token token operator">:</span><span> </span><span class="token token string">"Email"</span><span class="token token punctuation">,</span><span> type</span><span class="token token operator">:</span><span> </span><span class="token token string">"email"</span><span> </span><span class="token token punctuation">}</span><span> </span><span class="token token punctuation">}</span><span class="token token punctuation">,</span><span>
+                                 </span><span>    </span><span class="token token punctuation">{</span><span>
+                                 </span><span>      labelText</span><span class="token token operator">:</span><span> </span><span class="token token string">"Message"</span><span class="token token punctuation">,</span><span>
+                                 </span><span>      inputProps</span><span class="token token operator">:</span><span> </span><span class="token token punctuation">{</span><span>
+                                 </span><span>        placeholder</span><span class="token token operator">:</span><span> </span><span class="token token string">"Type a message..."</span><span class="token token punctuation">,</span><span>
+                                 </span><span>        type</span><span class="token token operator">:</span><span> </span><span class="token token string">"textarea"</span><span class="token token punctuation">,</span><span>
+                                 </span><span>        rows</span><span class="token token operator">:</span><span> </span><span class="token token string">"4"</span><span class="token token punctuation">,</span><span>
+                                 </span><span>        cols</span><span class="token token operator">:</span><span> </span><span class="token token string">"80"</span><span class="token token punctuation">,</span><span>
+                                 </span><span>      </span><span class="token token punctuation">}</span><span class="token token punctuation">,</span><span>
+                                 </span><span>    </span><span class="token token punctuation">}</span><span class="token token punctuation">,</span><span>
+                                 </span><span>  </span><span class="token token punctuation">]</span><span class="token token punctuation">,</span><span>
+                                 </span><span></span><span class="token token punctuation">}</span><span>
+                                 </span>
+                                 <span></span><span class="token token keyword module">export</span><span> </span><span class="token token keyword module">default</span><span> </span><span class="token token keyword">function</span><span> </span><span class="token token function maybe-class-name">Example</span><span class="token token punctuation">(</span><span class="token token punctuation">)</span><span> </span><span class="token token punctuation">{</span><span>
+                                 </span><span>  </span><span class="token token keyword control-flow">return</span><span> </span><span class="token token punctuation">(</span><span>
+                                 </span><span>    </span><span class="token token tag punctuation">&lt;</span><span class="token token tag punctuation">&gt;</span><span class="token token plain-text">
+                                 </span><span class="token token plain-text">      </span><span class="token token tag punctuation">&lt;</span><span class="token token tag class-name">CardContactUsTitle</span><span class="token token tag"> </span><span class="token token tag spread punctuation">{</span><span class="token token tag spread punctuation">...</span><span class="token token tag spread attr-value">props</span><span class="token token tag spread punctuation">}</span><span class="token token tag"> </span><span class="token token tag punctuation">/&gt;</span><span class="token token plain-text">
+                                 </span><span class="token token plain-text">    </span><span class="token token tag punctuation">&lt;/</span><span class="token token tag punctuation">&gt;</span><span>
+                                 </span><span>  </span><span class="token token punctuation">)</span><span>
+                                 </span><span></span><span class="token token punctuation">}</span><span>
+                                 </span>
+                                 </code>
+                             </pre>
+                         </div>
+                     </div>
+      
+                     <div class="relative hidden"><pre style="display: block; overflow-x: auto; padding: 14px; background: rgb(45, 43, 87); font-weight: normal; color: rgb(227, 223, 255); font-size: 0.825em; border-radius: 4px;"><code class="language-jsx" style="white-space: pre;"><span class="token token maybe-class-name">CardContactUsTitle</span><span class="token token punctuation">.</span><span class="token token property-access">defaultProps</span><span> </span><span class="token token operator">=</span><span> </span><span class="token token punctuation">{</span><span>
+                                 </span><span>  inputs</span><span class="token token operator">:</span><span> </span><span class="token token punctuation">[</span><span class="token token punctuation">]</span><span class="token token punctuation">,</span><span>
+                                 </span><span></span><span class="token token punctuation">}</span><span class="token token punctuation">;</span><span>
+                                 </span>
+                                 <span></span><span class="token token maybe-class-name">CardContactUsTitle</span><span class="token token punctuation">.</span><span class="token token property-access">propTypes</span><span> </span><span class="token token operator">=</span><span> </span><span class="token token punctuation">{</span><span>
+                                 </span><span>  title</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">string</span><span class="token token punctuation">,</span><span>
+                                 </span><span>  description</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">string</span><span class="token token punctuation">,</span><span>
+                                 </span><span>  buttonText</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">string</span><span class="token token punctuation">,</span><span>
+                                 </span><span>  </span><span class="token token comment">// for example you could pass an onClick handler like so:</span><span>
+                                 </span><span>  </span>
+                                 
+                                 <span>
+                                 </span><span>  buttonProps</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">object</span><span class="token token punctuation">,</span><span>
+                                 </span><span>  </span><span class="token token comment">// NOTE: you cannot change the default design of these components,</span><span>
+                                 </span><span>  </span><span class="token token comment">// // // i.e. you cannot pass className as props for them</span><span>
+                                 </span><span>  inputs</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token method function property-access">arrayOf</span><span class="token token punctuation">(</span><span>
+                                 </span><span>    </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token method function property-access">shape</span><span class="token token punctuation">(</span><span class="token token punctuation">{</span><span>
+                                 </span><span>      labelText</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">string</span><span class="token token punctuation">,</span><span>
+                                 </span><span>      labelProps</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">object</span><span class="token token punctuation">,</span><span>
+                                 </span><span>      </span><span class="token token comment">// NOTE: if you wish to generate a textarea, you will need to pass</span><span>
+                                 </span><span>      </span><span class="token token comment">// // // inside this object &gt;&gt; type: "textarea"</span><span>
+                                 </span><span>      </span><span class="token token comment">// // // full example &gt;&gt; inputProps: { type: "textarea" }</span><span>
+                                 </span><span>      inputProps</span><span class="token token operator">:</span><span> </span><span class="token token maybe-class-name">PropTypes</span><span class="token token punctuation">.</span><span class="token token property-access">object</span><span class="token token punctuation">,</span><span>
+                                 </span><span>    </span><span class="token token punctuation">}</span><span class="token token punctuation">)</span><span>
+                                 </span><span>  </span><span class="token token punctuation">)</span><span class="token token punctuation">,</span><span>
+                                 </span><span></span><span class="token token punctuation">}</span><span class="token token punctuation">;</span><span>
+                                 </span>
+                                 </code>
+                             </pre>
+                         </div>
+                     </div>
+                 </div>
             </div>
