@@ -1,114 +1,117 @@
-<nav className="fixed w-full shadow-lg bg-white shadow-lg flex flex-wrap items-center justify-between px-2 py-3 z-9999">
-    <div className="w-full px-4 mx-auto flex flex-wrap items-center justify-between">
-      <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+
+<div class="bg-white docs-components-wrapper">
+
+
+
+<nav class="fixed w-full bg-blueGray-900 flex flex-wrap items-center justify-between px-2 py-3 z-9999">
+    <div class="w-full px-4 mx-auto flex flex-wrap items-center justify-between max-h-screen-70 overflow-y-auto">
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
         <a class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase" href="#/components">Notus PRO React</a>
-        <button
-          className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-          type="button">
-          <i className="text-blueGray-800 fas fa-bars"></i>
-        </button>
+            <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button">
+               <i class="text-blueGray-800 fas fa-bars"></i>
+            </button>
       </div>
 
       <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden">
           <ul class="flex flex-col lg:flex-row list-none mr-auto lg:items-center">
               <li>
-                  <a class="hover:opacity-75 lg:text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold transition-all duration-150 ease-in-out text-blueGray-800" href="#/documentation/overview">Documentation</a></li>
-                  <li>
-                      <a class="hover:opacity-75 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold transition-all duration-150 ease-in-out text-white" href="#pablo">Components 
-                          <i class="ml-1 fas fa-caret-down transition-all duration-200 ease-in-out transform "></i></a>
-                          <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 0px);" data-popper-reference-hidden="" data-popper-escaped="">
-                            <a class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-800" href="#/components#presentation-id">Presentation</a>
-                            <a class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-800" href="#/components#admin-id">Admin</a>
-                            <a class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-800" href="#/components#e-commerce-id">E-commerce</a>
-                            <a class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-800" href="#/components#blog-id">Blog</a>
-                            <a class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-800" href="#/components#authentication-id">Authentication</a>
-                            <a class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-800" href="#/components#misc-id">Misc</a>
-                            <a class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-800" href="#/components#error-id">Error</a></div>
-                        </li>
-                        <li>
-                            <div class="inline-block group">
-                            <a class="hover:opacity-75 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold transition-all duration-200 ease-in-out text-white" href="#pablo">Example Pages 
-                                <i class="ml-1 fas fa-caret-down"></i></a>
-                                <div class=" block absolute origin-top-left bg-white text-base float-left p-2 pt-0 list-none text-left rounded-lg shadow-lg min-w-48 transition-all duration-200 ease-in-out transform scale-0 opacity-0 group-hover:opacity-100 group-hover:scale-100 border">
-                                    <div class="flex flex-wrap max-lg:pl-4">
-                                        <div class="w-full lg:w-1/3">
-                                            <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">E-Commerce</p>
-                                            <div class="pl-0">
-                                                <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/chat">Chat</a>
-                                                <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/checkout">Checkout</a>
-                                                <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/e-commerce">E-Commerce</a>
-                                                <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/invoice">Invoice</a>
-                                                <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/pricing">Pricing</a>
-                                                <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/product">Product</a>
-                                                <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/profile-1">Profile 1</a>
-                                                <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/settings-1">Settings 1</a>
-                                            </div>
-                                            </div>
-                                            <div class="w-full lg:w-1/3">
-                                                <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">Authentication</p>
-                                                <div class="pl-0"><a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/login-1">Login 1</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/login-2">Login 2</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/register-1">Register 1</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/register-2">Register 2</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/reset">Reset</a>
-                                                </div>
-                                            </div>
-                                            <div class="w-full lg:w-1/3">
-                                                <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">Presentation</p>
-                                                <div class="pl-0"><a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/landing-1">Landing 1</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/landing-2">Landing 2</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/about-us">About Us</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/contact-us">Contact Us</a>
-                                                </div>
-                                            </div>
-                                            <div class="w-full lg:w-1/3">
-                                                <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">Admin</p>
-                                                <div class="pl-0"><a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/dashboard">Dashboard</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/maps">Maps</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/settings-2">Settings 2</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/tables">Tables</a>
-                                                </div>
-                                            </div>
-                                            <div class="w-full lg:w-1/3">
-                                                <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">Error</p>
-                                                <div class="pl-0">
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/error-404">Error 404</a>
-                                                    <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/error-500">Error 500</a>
-                                                </div
-                                                ></div>
-                                                <div class="w-full lg:w-1/3">
-                                                    <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">Blog</p>
-                                                    <div class="pl-0"><a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/blog-post">Blog Post</a>
-                                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/blog-posts">Blog Posts</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </li>
-                                    </ul>
-                                    <ul class="flex flex-col lg:flex-row list-none lg:ml-auto lg:items-center"><li>
-                                        <a class="text-blueGray-800 hover:text-blueGray-600 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#pablo">
-                                            <i class="text-blueGray-500 lg:text-white fab fa-facebook text-lg leading-lg "></i><span class="lg:hidden inline-block ml-2">Share</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-blueGray-800 hover:text-blueGray-600 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#pablo">
-                                            <i class="text-blueGray-500 lg:text-white fab fa-twitter text-lg leading-lg "></i><span class="lg:hidden inline-block ml-2">Tweet</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-blueGray-800 hover:text-blueGray-600 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#pablo">
-                                            <i class="text-blueGray-500  lg:text-white fab fa-github text-lg leading-lg "></i><span class="lg:hidden inline-block ml-2">Star</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.creative-tim.com/product/notus-react" class="text-xs px-4 py-2 shadow hover:shadow-md text-white bg-blueGray-800 border-blueGray-800 active:bg-blueGray-900 active:border-blueGray-900 rounded outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold mr-2">Check FREE</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.creative-tim.com/product/notus-pro-react" class="text-xs px-4 py-2 shadow hover:shadow-md text-blueGray-800 bg-blueGray-100 border-blueGray-100 active:bg-blueGray-300 active:border-blueGray-300 rounded outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold">Buy PRO</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </nav>
+                <a class="hover:opacity-75 lg:text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold transition-all duration-150 ease-in-out text-blueGray-800" href="#/documentation/overview">Documentation</a>
+              </li>
+              <li>
+                <a class="hover:opacity-75 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold transition-all duration-150 ease-in-out text-white" href="#pablo">Components 
+                    <i class="ml-1 fas fa-caret-down transition-all duration-200 ease-in-out transform "></i></a>
+              </li>
+              <li>
+                 <div class="inline-block group">
+                    <a class="hover:opacity-75 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold transition-all duration-200 ease-in-out text-white" href="#pablo">Example Pages
+                         <i class="ml-1 fas fa-caret-down"></i></a>
+                         <div class=" block absolute origin-top-left bg-white text-base float-left p-2 pt-0 list-none text-left rounded-lg shadow-lg min-w-48 transition-all duration-200 ease-in-out transform scale-0 opacity-0 group-hover:opacity-100 group-hover:scale-100 border">
+                             <div class="flex flex-wrap max-lg:pl-4">
+
+                                 <div class="w-full lg:w-1/3">
+                                    <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400"></p>
+                                    <div class="pl-0">
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/chat">Chat</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/checkout">Checkout</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/e-commerce">E-Commerce</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/invoice">Invoice</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/pricing">Pricing</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/product">Product</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/profile-1">Profile 1</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/settings-1">Settings 1</a>
+                                    </div>
+                                 </div>
+                                 
+                                 <div class="w=full lg:w-1/3">
+                                    <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">Authentication</p>
+                                    <div class="pl-0">
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/login-1">Login 1</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/login-2">Login 2</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/register-1">Register 1</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/register-2">Register 2</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/reset">Reset</a>
+                                    </div>
+                                 </div>
+
+                                 <div class="w-full lg:w-1/3">
+                                    <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">Presentation</p>
+                                    <div class="pl-0">
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/landing-1">Landing 1</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/landing-2">Landing 2</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/about-us">About Us</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/contact-us">Contact Us</a>
+                                    </div>
+                                 </div>
+
+                                 <div class="w-full lg:w-1/3">
+                                    <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">Admin</p>
+                                    <div class="pl-0">
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/dashboard">Dashboard</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/maps">Maps</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/settings-2">Settings 2</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/tables">Tables</a>
+                                    </div>
+                                </div>
+
+                                <div class="w-full lg:w-1/3">
+                                    <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">Error</p>
+                                    <div class="pl-0">
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/error-404">Error 404</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/error-500">Error 500</a>
+                                    </div>
+                                </div>
+
+                                <div class="w-full lg:w-1/3">
+                                    <p class="uppercase font-bold text-xs px-3 pt-6 pb-2 block w-full whitespace-nowrap bg-transparent text-blueGray-400">Blog</p>
+                                    <div class="pl-0">
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/blog-post">Blog Post</a>
+                                        <a class="text-sm px-3 py-2 block w-full whitespace-nowrap bg-transparent hover:bg-blueGray-100 rounded transition-all duration-100" href="#/blog-posts">Blog Posts</a>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                 </div>
+              </li>
+          </ul>
+
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto lg:items-center">
+              <li>
+                <a class="text-blueGray-800 hover:text-blueGray-600 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#pablo"><i class="text-blueGray-500 lg:text-white fab fa-facebook text-lg leading-lg "></i><span class="lg:hidden inline-block ml-2">Share</span></a>
+              </li>
+              <li>
+                <a class="text-blueGray-800 hover:text-blueGray-600 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#pablo"><i class="text-blueGray-500 lg:text-white fab fa-twitter text-lg leading-lg "></i><span class="lg:hidden inline-block ml-2">Tweet</span></a>
+              </li>
+              <li>
+                <a class="text-blueGray-800 hover:text-blueGray-600 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#pablo"><i class="text-blueGray-500  lg:text-white fab fa-github text-lg leading-lg "></i><span class="lg:hidden inline-block ml-2">Star</span></a>
+              </li>
+              <li>
+                <a href="https://www.creative-tim.com/product/notus-react" class="text-xs px-4 py-2 shadow hover:shadow-md text-white bg-blueGray-800 border-blueGray-800 active:bg-blueGray-900 active:border-blueGray-900 rounded outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold mr-2">Check FREE</a> 
+              </li>
+              <li>
+                <a href="https://www.creative-tim.com/product/notus-pro-react" class="text-xs px-4 py-2 shadow hover:shadow-md text-blueGray-800 bg-blueGray-100 border-blueGray-100 active:bg-blueGray-300 active:border-blueGray-300 rounded outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase border border-solid font-bold">Buy PRO</a>
+              </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+</div>
