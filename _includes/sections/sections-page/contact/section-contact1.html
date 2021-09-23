@@ -2,18 +2,11 @@
 <div class="mb-16">
     <div class="flex flex-wrap flex-row items-center justify-between my-4">
         <div>
-            <h2 class="text-xl font-bold ct-component-name-title" id="presentation-id-presentation-id-components-cardinfoicon">ContactUs1</h2>
-        
-        <div class="">
-            <div class="flex flex-wrap items-center mb-4">
-                <p class="text-lg leading-relaxed text-blueGray-500 mr-2 my-2">Dependencies: </p>
-                <a class="text-lightBlue-500 font-medium my-2" href="#/components/presentation/components/cards#presentation-id-presentation-id-components-cardblogfullbg">CardContactUsTitle
-                    ,</a>
-                <span class="mr-2">,</span>
-                <a class="text-lightBlue-500 font-medium my-2" href="#/components/misc/components/headings#misc-id-misc-id-components-heading3">Heading3Badge</a>
-             </div>
-           </div>
-         </div>
+            <h2 class="text-xl font-bold ct-component-name-title" id="presentation-id-presentation-id-sections-contactus1">ContactUs1</h2><div class="">
+            <div class="flex flex-wrap items-center mb-4"><p class="text-lg leading-relaxed text-blueGray-500 mr-2 my-2">Dependencies: </p>
+                <a class="text-lightBlue-500 font-medium my-2" href="#/components/presentation/components/cards#presentation-id-presentation-id-components-cardcontactustitle">CardContactUsTitle</a><span class="mr-2">,</span>
+                <a class="text-lightBlue-500 font-medium my-2" href="#/components/misc/components/headings#misc-id-misc-id-components-heading3badge">Heading3Badge</a></div></div>
+            </div>
 
 
         <div class="inline-flex flex-wrap flex-row items-center">
@@ -36,7 +29,12 @@
 
 
                 <div class="border border-solid border-blueGray-200 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded-lg">
-                    {% include blogs/blogs1.html %}
+                    <div class="px-4 py-5 flex-auto ct-docs-frame">
+                        <div  class="relative flex flex-wrap justify-center ">
+                            {% include contact/contact1.html %}
+                        </div>
+                    </div>
+                  
                 </div>
 </div>
            
