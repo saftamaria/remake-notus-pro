@@ -1,28 +1,25 @@
 
+        
 <div class="mb-16">
     <div class="flex flex-wrap flex-row items-center justify-between my-4">
-        <div>
-            <h2 class="text-xl font-bold ct-component-name-title" id="presentation-id-presentation-id-components-cardinfoicon">Hero5</h2>
-        
-        <div class="">
-            <div class="flex flex-wrap items-center mb-4">
-                <p class="text-lg leading-relaxed text-blueGray-500 mr-2 my-2">Dependencies: </p>
-                <a class="text-lightBlue-500 font-medium my-2" href="#/components/presentation/components/cards#presentation-id-presentation-id-components-cardblogfullbg"> CardInfoFullColor </a>
-                <span class="mr-2">,</span>
-                <a class="text-lightBlue-500 font-medium my-2" href="#/components/misc/components/headings#misc-id-misc-id-components-heading3">CardInfoImage</a>
-                <span class="mr-2">,</span>
-                <a class="text-lightBlue-500 font-medium my-2" href="#/components/misc/components/headings#misc-id-misc-id-components-heading3">Heading2Badge</a>
+        <div><h2 class="text-xl font-bold ct-component-name-title" id="presentation-id-presentation-id-sections-hero5">Hero5</h2>
+            
+            <div class="">
+                <div class="flex flex-wrap items-center mb-4">
+                    <p class="text-lg leading-relaxed text-blueGray-500 mr-2 my-2">Dependencies: </p>
+                    <a class="text-lightBlue-500 font-medium my-2" href="#/components/presentation/components/info-areas#presentation-id-presentation-id-components-infoareaicontitlelinkcolor">InfoAreaIconTitleLinkColor</a>
+                    <span class="mr-2">,</span>
+                    <a class="text-lightBlue-500 font-medium my-2" href="#/components/misc/components/headings#misc-id-misc-id-components-heading2badge">Heading2Badge</a>
+                </div>
              </div>
-           </div>
          </div>
-
 
         <div class="inline-flex flex-wrap flex-row items-center">
             <div class="bg-blueGray-100 border border-blueGray-100 rounded-lg">
-                <button class="inline-flex items-center justify-center outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase font-bold text-xs py-2 px-3 text-center rounded-lg border bg-white text-blueGray-600 border-blueGray-400">
+                <button class="inline-flex items-center justify-center outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase font-bold text-xs py-2 px-3 text-center rounded-lg border bg-white text-blueGray-600 border-blueGray-400" onclick="setOpenTab(this, 'preview')">
                     <i class="fas fa-eye mr-2 text-lightBlue-600"> </i>Preview
                 </button>
-                <button class="inline-flex items-center justify-center outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase font-bold text-xs py-2 px-3 text-center rounded-lg border text-blueGray-500 border-transparent">
+                <button class="inline-flex items-center justify-center outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase font-bold text-xs py-2 px-3 text-center rounded-lg border text-blueGray-500 border-transparent" onclick="setOpenTab(this, 'code')">
                     <i class="fas fa-code mr-2 "></i>Code
                 </button>
             </div>
@@ -34,10 +31,24 @@
            </div>
         </div>
     </div>
-
-
                 <div class="border border-solid border-blueGray-200 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded-lg">
-                    {% include hero/hero5.html %}
-                </div>
+                    <div class="px-4 py-5 flex-auto ct-docs-frame">
+                        <div class="relative flex flex-wrap justify-center ">
+
+                            {% include hero/hero5.html %}
+
+                        </div>
+                        <div class="relative hidden">
+                          <div class="docs-code-preview bg-blueGray-800 overflow-x-auto rounded-lg p-5">
+
+                            {% highlight html %}
+
+                            {% include hero/hero5.html %}
+
+                            {% endhighlight %}
+
+                          </div>
+                        </div>
+                    </div>
+        </div>
 </div>
-           
