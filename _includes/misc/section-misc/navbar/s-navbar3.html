@@ -1,0 +1,45 @@
+
+<div class="mb-16">
+    <div class="flex flex-wrap flex-row items-center justify-between my-4">
+        <div>
+            <h2 class="text-xl font-bold ct-component-name-title" id="presentation-id-presentation-id-components-cardinfoicon">NavbarButton</h2>
+            <p class="mt-0 mb-5 leading-relaxed text-blueGray-500">This is the NavbarButton tag. You can used it inside the NavbarContainer to make the NavbarCollapse open on small devices. We've added a style of display block important so that you may see it. </p>
+        </div>
+        <div class="inline-flex flex-wrap flex-row items-center">
+            <div class="bg-blueGray-100 border border-blueGray-100 rounded-lg">
+                <button class="inline-flex items-center justify-center outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase font-bold text-xs py-2 px-3 text-center rounded-lg border bg-white text-blueGray-600 border-blueGray-400" onclick="setOpenTab(this, 'preview')">
+                    <i class="fas fa-eye mr-2 text-lightBlue-600"> </i>Preview
+                </button>
+                <button class="inline-flex items-center justify-center outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase font-bold text-xs py-2 px-3 text-center rounded-lg border text-blueGray-500 border-transparent" onclick="setOpenTab(this, 'code')">
+                    <i class="fas fa-code mr-2 "></i>Code
+                </button>
+            </div>
+            <div class="relative">
+                <span class="-top-8 -left-4 absolute text-white rounded-lg py-1 px-2 bg-blueGray-800 transition-all duration-200 ease-in-out transform scale-0 opacity-0 ">Copied</span>
+                <button class="group inline-flex items-center justify-center outline-none focus:outline-none align-middle transition-all duration-150 ease-in-out uppercase font-bold text-xs py-2 px-3 text-center rounded-lg bg-white text-blueGray-600 focus:text-lightBlue-600">
+                    <i class="far fa-clone transition-all duration-200 ease-in-out transform group-focus:rotate-6"></i>
+               </button>
+           </div>
+        </div>
+    </div>
+                <div class="border border-solid border-blueGray-200 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded-lg">
+                    <div class="px-4 py-5 flex-auto ct-docs-frame">
+                        <div class="relative flex flex-wrap justify-center ">
+
+                            {% include misc/components/blocks/navbars/navbar3.html %}
+
+                        </div>
+                        <div class="relative hidden">
+                          <div class="docs-code-preview bg-blueGray-800 overflow-x-auto rounded-lg p-5">
+
+                            {% highlight html %}
+
+                            {% include misc/components/blocks/navbars/navbar3.html %}
+
+                            {% endhighlight %}
+
+                          </div>
+                        </div>
+                    </div>
+        </div>
+</div>
