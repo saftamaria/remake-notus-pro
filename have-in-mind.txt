@@ -2,3 +2,5 @@
 TODO
 
 -MAP: nu se afiseaza iconitele, url:http://localhost:4000/admin/pages/maps.html
+
+-MEDIA: de facut butoanele de la slide sa functioneze , url: http://localhost:4000/misc/components/media.html#pablo
