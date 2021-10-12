@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ {% include main-page/sections/head.html %}
+
+</head>
+
+<body class="text-blueGray-700 antialiased">
+   <div class="bg-white docs-components-wrapper">
+
+       <!--Nav-->
+   {% include nav.html %}
+
+        {{content}}
+
+   {% include script.html %}
+
+   </div>
+
+</body>
+
+{% include footer-down.html %}
+
+</html>
