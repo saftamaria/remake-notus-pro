@@ -15,11 +15,14 @@
    <div class="bg-white min-h-screen">
      <div class="flex flex-raw pt-20 justify-center"></div>
      <div class="mx-auto px-4 container">
+        {% if page.folder != "Examples"  %}
         <div class="flex justify-center my-8 flex-col">
            <h2 class="text-lg font-medium text-blueGray-600 mb-2"><a class="mr-2" href="#/components#presentation-id">Presentation</a><i class="fas fa-angle-right mr-2"></i><a href="#/components#presentation-id-components">{{ page.category }}</a></h2>
            <h1 class="text-3xl font-semibold">{{ page.title }}</h1>
         </div>
 
+        {% endif %}
+       
         {{content}}
         
      </div>
@@ -30,5 +33,5 @@
     {% include script.html %}
 
 </body>
-{% include footer-down.html %}
+
 </html>
